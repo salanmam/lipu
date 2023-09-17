@@ -1,0 +1,29 @@
+<?php
+ob_start();
+error_reporting(0);
+$html = file_get_contents('https://t.me/s/'.$_GET['channel']);
+preg_match_all('#<a href="(.*?)" target="_blank" rel="noopener">(.*?)</a>#',$html,$match);
+$count=0;
+for($i=0;$i<=14;$i++)
+{
+    if(!is_null($match[1][$i]))
+    {
+        if(substr($match[1][$i],0,22-strlen($match[1][$i])) == 'https://t.me/joinchat/')
+        {
+            $get = file_get_contents($match[1][$i]);
+            preg_match_all('#<meta property="og:title" content="(.*?)">#',$get,$verify);
+            if($verify[1][0] != 'Join group chat on Telegram')
+            {
+                if(!in_array($match[1][$i],explode(PHP_EOL,file_get_contents('result.txt'))))
+                {
+                    $count++;
+                    $file = fopen('result.txt','a') or die();
+                    fwrite($file,$match[1][$i].PHP_EOL);
+                    fclose($file);
+                }
+            }
+        }
+    }
+}
+$total = count(explode(PHP_EOL,file_get_contents('result.txt')))-1;
+print('تعداد '.$count.'کانال ما : @Source_Home<br>پروسه به پایان رسید !<br>تعداد کل لینک های جمع آوری شده : '.$total);
