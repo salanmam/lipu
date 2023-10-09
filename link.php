@@ -17,6 +17,27 @@ for($i=0;$i<=14;$i++)
                 if(!in_array($match[1][$i],explode(PHP_EOL,file_get_contents('result.txt'))))
                 {
                     $count++;
+                    <?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message = 'Choose an option:';
+
+$keyboard = array(
+    'keyboard' => array(array('Option 1', 'Option 2')),
+    'resize_keyboard' => true,
+    'one_time_keyboard' => true
+);
+
+$url = "https://api.telegram.org/bot$token/sendMessage";
+$data = array(
+    'chat_id' => $chat_id,
+    'text' => $message,
+    'reply_markup' => json_encode($keyboard)
+);
+
+file_get_contents($url . '?' . http_build_query($data));
+?>
+
                     $file = fopen('result.txt','a') or die();
                     fwrite($file,$match[1][$i].PHP_EOL);
                     fclose($file);
