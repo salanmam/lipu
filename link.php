@@ -30,7 +30,6 @@ $keyboard = array(
 
 $url = "https://api.telegram.org/bot$token/sendMessage";
 $data = array(
-    'chat_id' => $chat_id,
     'text' => $message,
     'reply_markup' => json_encode($keyboard)
 );
