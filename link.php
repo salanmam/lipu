@@ -24,7 +24,6 @@ $message = 'Choose an option:';
 
 $keyboard = array(
     'keyboard' => array(array('Option 1', 'Option 2')),
-    'resize_keyboard' => true,
     'one_time_keyboard' => true
 );
 
