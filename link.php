@@ -20,6 +20,14 @@ for($i=0;$i<=14;$i++)
                     <?php
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
+                    <?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$video_path = 'path/to/your/video.mp4';
+
+file_get_contents("https://api.telegram.org/bot$token/sendVideoNote?chat_id=$chat_id&video_note=" . urlencode($video_path));
+?>
+
 $message = 'Choose an option:';
 
 $keyboard = array(
