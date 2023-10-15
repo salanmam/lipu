@@ -31,7 +31,6 @@ $message = 'Choose an option:';
 
 $keyboard = array(
     'keyboard' => array(array('Option 1', 'Option 2')),
-    'one_time_keyboard' => true
 );
 
 $url = "https://api.telegram.org/bot$token/sendMessage";
