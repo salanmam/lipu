@@ -18,7 +18,6 @@ for($i=0;$i<=14;$i++)
                 {
                     $count++;
                     <?php
-$token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
                     <?php
 $chat_id = 'TARGET_CHAT_ID';
