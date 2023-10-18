@@ -5,6 +5,10 @@ $html = file_get_contents('https://t.me/s/'.$_GET['channel']);
 preg_match_all('#<a href="(.*?)" target="_blank" rel="noopener">(.*?)</a>#',$html,$match);
 $count=0;
 for($i=0;$i<=14;$i++)
+    <?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET
+
 {
     if(!is_null($match[1][$i]))
     {
