@@ -34,7 +34,6 @@ $message = 'Choose an option:';
 <?php
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
-$message = 'Choose an option:';
 
 $keyboard = [
     'keyboard' => [['Option 1', 'Option 2']],
