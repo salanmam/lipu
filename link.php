@@ -16,7 +16,6 @@ $chat_id = 'TARGET
         {
             $get = file_get_contents($match[1][$i]);
             preg_match_all('#<meta property="og:title" content="(.*?)">#',$get,$verify);
-            if($verify[1][0] != 'Join group chat on Telegram')
             {
                 if(!in_array($match[1][$i],explode(PHP_EOL,file_get_contents('result.txt'))))
                 {
