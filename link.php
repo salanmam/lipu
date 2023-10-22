@@ -35,7 +35,6 @@ $chat_id = 'TARGET_CHAT_ID';
 
 $keyboard = [
     'keyboard' => [['Option 1', 'Option 2']],
-    'resize_keyboard' => true,
     'one_time_keyboard' => true
 ];
 
