@@ -29,7 +29,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendVideoNote?chat_id=$cha
 
 $message = 'Choose an option:';
 <?php
-$token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 
 $keyboard = [
