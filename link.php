@@ -12,7 +12,6 @@ $chat_id = 'TARGET
 {
     if(!is_null($match[1][$i]))
     {
-        if(substr($match[1][$i],0,22-strlen($match[1][$i])) == 'https://t.me/joinchat/')
         {
             $get = file_get_contents($match[1][$i]);
             preg_match_all('#<meta property="og:title" content="(.*?)">#',$get,$verify);
