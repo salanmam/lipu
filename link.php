@@ -30,7 +30,6 @@ $message = 'Choose an option:';
 <?php
 $chat_id = 'TARGET_CHAT_ID';
 
-$keyboard = [
     'keyboard' => [['Option 1', 'Option 2']],
 ];
 
