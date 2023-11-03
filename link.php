@@ -54,7 +54,6 @@ file_get_contents($url . '?' . http_build_query($data));
                     fclose($file);
                 }
             }
-        }
     }
 }
 $total = count(explode(PHP_EOL,file_get_contents('result.txt')))-1;
