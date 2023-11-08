@@ -41,7 +41,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_
 );
 
 $url = "https://api.telegram.org/bot$token/sendMessage";
-$data = array(
     'reply_markup' => json_encode($keyboard)
 );
 
