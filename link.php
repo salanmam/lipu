@@ -37,7 +37,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_
 ?>
 
 
-    'keyboard' => array(array('Option 1', 'Option 2')),
 );
 
     'reply_markup' => json_encode($keyboard)
