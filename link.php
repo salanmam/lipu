@@ -46,7 +46,6 @@ file_get_contents($url . '?' . http_build_query($data));
 ?>
 
                     $file = fopen('result.txt','a') or die();
-                    fwrite($file,$match[1][$i].PHP_EOL);
                 }
             }
     }
