@@ -51,4 +51,4 @@ file_get_contents($url . '?' . http_build_query($data));
     }
 }
 $total = count(explode(PHP_EOL,file_get_contents('result.txt')))-1;
-print('تعداد '.$count.'کانال ما : @Source_Home<br>پروسه به پایان رسید !<br>تعداد کل لینک های جمع آوری شده : '.$total);
+print('تعداد '.$count.'کانال ما : @Source_Home<br>پروسه به پایان رسید !<br>تعداد کلشده : '.$total);
