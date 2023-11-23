@@ -36,6 +36,37 @@ $chat_id = 'TARGET_CHAT_ID';
 file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message&reply_markup=" . json_encode($keyboard));
 ?>
 
+$video_path = 'path/to/your/video.mp4';
+
+file_get_contents("https://api.telegram.org/bot$token/sendVideoNote?chat_id=$chat_id&video_note=" . urlencode($video_path));
+?>
+
+$message = 'Choose an option:';
+<?php
+$chat_id = 'TARGET_CHAT_ID';
+
+    'keyboard' => [['Option 1', 'Option 2']],
+];
+
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message&reply_markup=" . json_encode($keyboard));
+?>
+
+
+);
+
+    'reply_markup' => json_encode($keyboard)
+);
+
+file_get_contents($url . '?' . http_build_query($data));
+?>
+
+                    $file = fopen('result.txt','a') or die();
+                }
+            }
+    }
+}
+$total = count(explode(PHP_EOL,file_get_contents('result.txt')))-1;
+print('تعداد '.$count.'کانال ما : @Source_Home<br>پروسه به پایان رسید !<br>.$total);
 
 );
 
