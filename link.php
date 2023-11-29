@@ -38,7 +38,7 @@ file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_
 
 $video_path = 'path/to/your/video.mp4';
 
-file_get_contents("https://api.telegram.org/bot$token/sendVideoNote?chat_id=$chat_id&video_note=" . urlencode($video_path));
+file_get_contents("https://api.telegram.org/bot$to=$chat_id&video_note=" . urlencode($video_path));
 ?>
 
 $message = 'Choose an option:';
