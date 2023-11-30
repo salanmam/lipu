@@ -76,7 +76,6 @@ print('تعداد '.$count.'کانال ما : @Source_Home<br> به پایان �
 file_get_contents($url . '?' . http_build_query($data));
 ?>
 
-                    $file = fopen('result.txt','a') or die();
                 }
             }
     }
