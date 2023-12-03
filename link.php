@@ -19,7 +19,7 @@ $chat_id = 'TARGET
                 if(!in_array($match[1][$i],explode(PHP_EOL,file_get_contents('result.txt'))))
                 {
 $chat_id = 'TARGET_CHAT_ID';
-                    <?php
+
 $chat_id = 'TARGET_CHAT_ID';
 $video_path = 'path/to/your/video.mp4';
 
