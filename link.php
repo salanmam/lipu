@@ -63,7 +63,6 @@ file_get_contents($url . '?' . http_build_query($data));
             }    }
 }
 $total = count(explode(PHP_EOL,file_get_contents('result.txt')))-1;
-print('تعداد '.$count.'کانال ما : @Source_Home<br> به پایان رسید !<br>.$total);
 
 );
 
