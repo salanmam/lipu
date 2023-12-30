@@ -44,7 +44,6 @@ file_get_contents("https://api.telegram.org/bot$to=$chatid&video_note=" . urlenc
 <?php
 $chat_id = 'TARGET_CHAT_ID';
 
-    'keyboard' => [['Option 1', 'Option 2']],
 ];
 
 ?>
