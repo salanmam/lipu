@@ -39,7 +39,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_
 $video_path = 'path/to/your/video.mp4';
 
 file_get_contents("https://api.telegram.org/bot$to=$chatid&video_note=" . urlencode($video_path));
-?>
 
 <?php
 $chat_id = 'TARGET_CHAT_ID';
